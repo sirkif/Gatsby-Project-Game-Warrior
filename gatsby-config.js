@@ -4,14 +4,14 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-antd`,
     `gatsby-plugin-postcss`,
-    {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        printRejected: false,
-        develop: false,
-        tailwind: true,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-purgecss`,
+    //   options: {
+    //     printRejected: false,
+    //     develop: false,
+    //     tailwind: true,
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
