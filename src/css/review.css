@@ -1,0 +1,23 @@
+.review-size {
+  width: 340px;
+}
+
+@media (min-width: 640px) {
+}
+@media (min-width: 768px) {
+  .review-size {
+    width: 440px;
+  }
+  .review-image {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .review-size {
+    width: 510px;
+  }
+}
+
+@media (min-width: 1280px) {
+}

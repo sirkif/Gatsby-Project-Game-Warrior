@@ -1,0 +1,67 @@
+@tailwind base;
+
+@tailwind components;
+
+@screen sm {
+  .bg-review-game {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+}
+@screen md {
+  .bg-review-game {
+    background-size: cover;
+  }
+}
+@screen lg {
+}
+@tailwind utilities;
+.container {
+  max-width: 1280px;
+  /* padding: 0 1.5rem; */
+  margin: auto;
+  overflow: hidden;
+}
+.bottom-line {
+  height: 3px;
+  width: 5rem;
+  display: block;
+}
+
+.set-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.bg-position-top {
+  height: 500px;
+}
+
+.new {
+  background: #ff205f;
+}
+.card-hover {
+  position: relative;
+  transition: transform 0.3s;
+  cursor: text;
+  height: 20rem;
+  width: 15rem;
+}
+.card-hover:hover {
+  transform: translateY(-0.6rem) scale(1);
+}
+.score {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  top: -26px;
+  left: 26px;
+  padding-top: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 1;
+}

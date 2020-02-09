@@ -1,0 +1,38 @@
+.footer-top-section {
+  background-image: url("../images/pattern.png");
+  min-height: 100%;
+  background-repeat: repeat;
+  padding: 50px 0;
+}
+
+.footer-widget {
+  padding: 40px 20px 7px;
+  background: #252525;
+  border: 1px solid #4a4a4a;
+}
+.fw-title {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+/* .lb-thumb {
+  width: 90px;
+  height: 90px;
+} */
+.footer-section {
+  padding: 18px 16px;
+  overflow: hidden;
+  background: #252525;
+}
+
+@media (min-width: 640px) {
+}
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1280px) {
+}
