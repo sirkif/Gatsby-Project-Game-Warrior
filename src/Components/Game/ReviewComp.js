@@ -1,14 +1,16 @@
 import React from "react"
-
-const ReviewComp = ({ img, imgA, desc, title, review, rate }) => {
+import { Rate } from "antd"
+import IMG from "gatsby-image"
+const ReviewComp = ({ title, desc, imageAlt, imageUrl, review }) => {
+  const img = imageUrl.childImageSharp.fluid
   return (
     <div className="w-full lg:w-1/2  my-6">
       <div className="bg-white rounded-lg shadow relative z-10 review-size mx-auto">
         <div className="score bg-mainColor">{review}</div>
-        <img
+        <IMG
           className="review-image w-full object-cover object-center"
-          src={img}
-          alt={imgA}
+          fluid={img}
+          alt={imageAlt}
         />
 
         <div className="p-4">
@@ -19,7 +21,9 @@ const ReviewComp = ({ img, imgA, desc, title, review, rate }) => {
             {desc}
           </p>
           <div className="text-center">
-            <div>{rate}</div>
+            <div>
+              <Rate disabled allowHalf defaultValue={4.5} />,
+            </div>
           </div>
         </div>
       </div>

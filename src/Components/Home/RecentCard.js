@@ -1,31 +1,6 @@
 import React from "react"
 import IMG from "gatsby-image"
-// import { useStaticQuery, graphql } from "gatsby"
-// const getData = graphql`
-//   {
-//     image1: file(relativePath: { eq: "recent-game/1.jpg" }) {
-//       childImageSharp {
-//         fluid {
-//           ...GatsbyImageSharpFluid
-//         }
-//       }
-//     }
-//     image2: file(relativePath: { eq: "recent-game/2.jpg" }) {
-//       childImageSharp {
-//         fluid {
-//           ...GatsbyImageSharpFluid
-//         }
-//       }
-//     }
-//     image3: file(relativePath: { eq: "recent-game/3.jpg" }) {
-//       childImageSharp {
-//         fluid {
-//           ...GatsbyImageSharpFluid
-//         }
-//       }
-//     }
-//   }
-// `
+
 const RecentCard = ({ title, desc, imageAlt, image, tag1, tag2, tag3 }) => {
   // const RecentCard = ({ jsonTest }) => {
   //   const { title, desc, imageAlt, image, tag1, tag2, tag3 } = jsonTest
