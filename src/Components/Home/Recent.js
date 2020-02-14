@@ -45,13 +45,13 @@ const Recent = () => {
             <div className="bottom-line bg-mainColor mx-auto -mt-4 mb-3 sm:mb-4"></div>
           </div>
           <div className="flex flex-wrap">
-            {test.edges.map(({ node }) => {
-              return <RecentCard key={node.id} {...node} />
-            })}
-
             {/* {test.edges.map(({ node }) => {
-              return <RecentCard key={node.id} jsonTest={node} />
+              return <RecentCard key={node.id} {...node} />
             })} */}
+
+            {test.edges.map(({ node }) => {
+              return <RecentCard key={node.id} jsonTest={node} />
+            })}
 
             {/* {ConstantRecent.map(item => {
               return (

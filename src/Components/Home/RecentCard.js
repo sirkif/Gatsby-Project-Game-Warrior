@@ -1,9 +1,9 @@
 import React from "react"
 import IMG from "gatsby-image"
 
-const RecentCard = ({ title, desc, imageAlt, image, tag1, tag2, tag3 }) => {
-  // const RecentCard = ({ jsonTest }) => {
-  //   const { title, desc, imageAlt, image, tag1, tag2, tag3 } = jsonTest
+// const RecentCard = ({ title, desc, imageAlt, image, tag1, tag2, tag3 }) => {
+const RecentCard = ({ jsonTest }) => {
+  const { title, desc, imageAlt, image, tag1, tag2, tag3 } = jsonTest
   // const data = useStaticQuery(getData)
   const img = image.childImageSharp.fluid
   // const img2 = data.image2.childImageSharp.fluid
