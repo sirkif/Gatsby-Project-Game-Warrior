@@ -1,9 +1,36 @@
 import React from "react"
 import background from "../../images/recent-game-bg.png"
 import "../../css/recent.css"
+import { useStaticQuery, graphql } from "gatsby"
 import RecentCard from "./RecentCard"
-import ConstantRecent from "../constants/ConstantRecent"
+// import ConstantRecent from "../constants/ConstantRecent"
+const getData = graphql`
+  {
+    test: allTestJson {
+      edges {
+        node {
+          id
+          title
+          desc
+          tag1
+          tag2
+          tag3
+          imageAlt
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`
 const Recent = () => {
+  const { test } = useStaticQuery(getData)
+  // console.log(test)
   return (
     <>
       <div
@@ -18,7 +45,15 @@ const Recent = () => {
             <div className="bottom-line bg-mainColor mx-auto -mt-4 mb-3 sm:mb-4"></div>
           </div>
           <div className="flex flex-wrap">
-            {ConstantRecent.map(item => {
+            {test.edges.map(({ node }) => {
+              return <RecentCard key={node.id} {...node} />
+            })}
+
+            {/* {test.edges.map(({ node }) => {
+              return <RecentCard key={node.id} jsonTest={node} />
+            })} */}
+
+            {/* {ConstantRecent.map(item => {
               return (
                 <RecentCard
                   key={item.id}
@@ -31,7 +66,7 @@ const Recent = () => {
                   tag3={item.tag3}
                 />
               )
-            })}
+            })} */}
           </div>
         </div>
       </div>
