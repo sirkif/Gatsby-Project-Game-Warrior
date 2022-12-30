@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "antd": "^3.26.8",
-    "gatsby": "^2.18.12",
+    "gatsby": "^2.32.13",
     "gatsby-background-image": "^0.9.14",
     "gatsby-image": "^2.2.40",
     "gatsby-plugin-antd": "^2.1.0",
